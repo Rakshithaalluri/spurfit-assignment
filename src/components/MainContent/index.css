@@ -1,0 +1,411 @@
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ahead-app-container {
+  background-color: #e6e3f5;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  margin-bottom: 90px;
+}
+
+.master-heading-container {
+  width: 95%;
+  /* border: 1px red solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ahead-title-content {
+  width: 40%;
+}
+
+.ahead-app-text {
+  color: #0f0f11;
+  font-size: 15px;
+  font-weight: 400;
+  padding-top: 50px;
+}
+
+.ahead-title {
+  color: #0f0f11;
+  font-weight: bold;
+  font-size: 55px;
+  margin-top: 0px;
+}
+
+.app-store-rating-container {
+  display: flex;
+}
+.app-store-button {
+  background-color: #0f0f11;
+  border-radius: 3px;
+  height: 30px;
+  width: 100px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 10px;
+  margin-bottom: 70px;
+}
+.apple-icon {
+  color: #ffffff;
+}
+.eq-beats-iq-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  /* border: 1px red solid;*/
+  margin-bottom: 70px;
+}
+.eq-iq-heading {
+  color: #0f0f11;
+  font-size: 30px;
+  font-weight: 500;
+  width: 60%;
+}
+.eq-description {
+  color: #4a4a50;
+  font-size: 18px;
+  width: 50%;
+  margin-right: 30px;
+}
+
+.familiar-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  /* border: 1px red solid; */
+  margin-bottom: 80px;
+}
+
+.familiar-text {
+  color: #0f0f11;
+  font-size: 45px;
+  font-weight: bold;
+}
+.emojis-familiar-card {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.list-card {
+  background-color: #ccf2ff;
+  border-radius: 15px;
+  padding: 12px;
+  width: 250px;
+}
+
+.familiar-title {
+  color: #0f0f11;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.familiar-description {
+  color: #4a4a50;
+  font-size: 13px;
+}
+
+.meet-ahead-container {
+  background-color: #fff2e4;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  /* border: 1px red solid; */
+  padding: 20px;
+  margin-bottom: 80px;
+}
+
+.meet-familiar-in-container {
+  width: 93%;
+  /* border: 1px red solid; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.meet-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+}
+.meet-title {
+  color: #0f0f11;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.meet-description {
+  color: #0f0f11;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.meet-content {
+  color: #4a4a50;
+  font-size: 17px;
+  font-weight: 450;
+  width: 35%;
+}
+
+.self-improvement-timeline-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  /* border: 1px red solid; */
+  margin-bottom: 80px;
+}
+
+.chrono-container {
+  width: 400px;
+  height: 600px;
+}
+
+.Ever-wondered-container {
+  background-color: #e8f6fd;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  margin-bottom: 90px;
+}
+
+.ever-wonder-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  /* border: 1px red solid; */
+}
+
+.wondered-title {
+  color: #0f0f11;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-top: 60px;
+}
+
+.wondered-sub-title {
+  color: #0f0f11;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+.flow-wondered-questions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+}
+.questions {
+  color: #0f0f11;
+  font-size: 13px;
+  font-weight: 500;
+  width: 30%;
+  text-align: center;
+}
+.before-start-test-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  /* border: 1px red solid; */
+  margin-bottom: 80px;
+}
+.test-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
+.privacy-text {
+  color: #0f0f11;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.started-text {
+  color: #0f0f11;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.test-description {
+  color: #4a4a50;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+.with-love-text {
+  color: #0f0f11;
+  font-size: 16px;
+  font-weight: 400;
+}
+.start-test-button {
+  background-color: #0f0f11;
+  color: #ffffff;
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+
+.min-test {
+  color: #4a4a50;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.work-with-us-container {
+  background-color: #ececfa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  border-radius: 30px;
+  margin-bottom: 80px;
+}
+.work-with-us-description-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.about-product-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.work-with-us-title {
+  color: #0f0f11;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.about-product-description {
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 70%;
+  margin-bottom: 50px;
+}
+.about-container {
+  padding: 10px;
+}
+
+.about-title {
+  color: #0f0f11;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about-content {
+  color: #4a4a50;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.product-container {
+  background-color: #fdf1ed;
+  border-radius: 15px;
+  padding: 10px;
+}
+.ahead-product-heading {
+  color: #995cf3;
+  font-size: 40px;
+  font-weight: 500;
+}
+.cards-products-container {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 30%;
+  overflow-x: auto;
+}
+.ahead-card-containers {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 13px;
+  margin: 10px;
+}
+.ahead-titled {
+  color: #0f0f11;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ahead-content-con {
+  color: #4a4a50;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.open-vacancies-container {
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.open-vacancies-description {
+  width: 90%;
+}
+
+.open-vacancies-title {
+  color: #0f0f11;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.open-roles-container {
+  display: flex;
+  margin: 10px;
+  margin-left: 0px;
+}
+
+.vacancy-card {
+  background-color: #fff6eb;
+  border-radius: 20px;
+  width: 40%;
+  margin: 20px;
+  padding: 10px;
+}
+.role {
+  color: #0f0f11;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 30px;
+}
+.role-part {
+  color: #0f0f11;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.hr-line {
+  border: 1px red solid;
+}
