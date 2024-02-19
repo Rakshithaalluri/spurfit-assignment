@@ -1,25 +1,78 @@
 import "./index.css";
-import { Chrono } from "react-chrono";
-const items = [
+import EmotionCard from "../EmotionCard";
+
+const selfImprovementsList = [
   {
-    tit: "It's not an easy as 1-2-3",
-    cardText:
+    id: 1,
+    title: "It's not an easy as 1-2-3",
+    description:
       "The journey of change may be long, but our sessions are quick. we get to the point and tell you what you want to know(and nothing else)",
   },
   {
-    tit: "old not an easy as 1-2-3",
-    cardText:
+    id: 2,
+    title: "It's not an easy as 1-2-3",
+    description:
       "The journey of change may be long, but our sessions are quick. we get to the point and tell you what you want to know(and nothing else)",
   },
   {
-    tit: "new not an easy as 1-2-3",
-    cardText:
+    id: 3,
+    title: "It's not an easy as 1-2-3",
+    description:
       "The journey of change may be long, but our sessions are quick. we get to the point and tell you what you want to know(and nothing else)",
   },
   {
-    tit: "It's not an easy as 1-2-3",
-    cardText:
+    id: 4,
+    title: "It's not an easy as 1-2-3",
+    description:
       "The journey of change may be long, but our sessions are quick. we get to the point and tell you what you want to know(and nothing else)",
+  },
+];
+
+const emotionsCardsList = [
+  {
+    id: "ANGRY",
+    imageUrl:
+      "https://t3.ftcdn.net/jpg/05/13/10/72/240_F_513107205_l8D8VdOmX22Sr0C4zatNMPay3h5TjNJk.jpg",
+    title: "You argue with a colleague",
+    description:
+      "You get angry and defensive, instead of staying open and working towards common ground",
+    cardColor: "#cde4f7",
+  },
+  {
+    id: "WONDER",
+    imageUrl:
+      "https://t3.ftcdn.net/jpg/05/13/10/72/240_F_513107205_l8D8VdOmX22Sr0C4zatNMPay3h5TjNJk.jpg",
+    title: "You argue with a colleague",
+    description:
+      "You get angry and defensive, instead of staying open and working towards common ground",
+    cardColor: "#eedefc",
+  },
+  {
+    id: "DOUBT",
+    imageUrl:
+      "https://t3.ftcdn.net/jpg/05/13/10/72/240_F_513107205_l8D8VdOmX22Sr0C4zatNMPay3h5TjNJk.jpg",
+    title: "You argue with a colleague",
+    description:
+      "You get angry and defensive, instead of staying open and working towards common ground",
+    cardColor: "#5f1ef7",
+  },
+  {
+    id: "DISAPPOINT",
+    imageUrl:
+      "https://t3.ftcdn.net/jpg/05/13/10/72/240_F_513107205_l8D8VdOmX22Sr0C4zatNMPay3h5TjNJk.jpg",
+    title: "You argue with a colleague",
+    description:
+      "You get angry and defensive, instead of staying open and working towards common ground",
+    cardColor: "#fccfb1",
+  },
+  {
+    id: "NERVOUS",
+    imageUrl:
+      "https://t3.ftcdn.net/jpg/05/13/10/72/240_F_513107205_l8D8VdOmX22Sr0C4zatNMPay3h5TjNJk.jpg",
+    title: "You argue with a colleague",
+    description:
+      "You get angry and defensive, instead of staying open and working towards common ground",
+    cardColor: "#fcf9c5",
   },
 ];
 
@@ -33,16 +86,30 @@ const MainContent = () => (
             {" "}
             Master your life by mastering emotions{" "}
           </h1>
-          <div className="app-store-rating-container">
-            <button className="app-store-button">
-              <ion-icon name="logo-apple" className="apple-icon"></ion-icon>
-              Download on AppStore
-            </button>
+          <div className="app-and-rating">
+            <img
+              src="https://brandeps.com/logo-download/D/Download-on-the-App-Store-logo-vector-01.svg"
+              className="app-store-image"
+              alt="app store"
+            />
+            <div className="rating-container">
+              <img
+                src="https://t3.ftcdn.net/jpg/06/04/56/52/360_F_604565205_NMEgtTykGn8oEcqS0nHzVwDvvgWQbkhI.jpg"
+                className="five-star-image"
+                alt="five star"
+              />
+              <p className="rating">100+ AppStore reviews</p>
+            </div>
           </div>
         </div>
-        <h1> hello world </h1>
+        <img
+          src="https://self-awareness.ahead-app.com/static/media/home_owel.e23a16a0.svg"
+          className="home-image"
+          alt="home"
+        />
       </div>
     </div>
+
     <div className="eq-beats-iq-container">
       <h1 className="eq-iq-heading"> EQ beats IQ </h1>
       <p className="eq-description">
@@ -56,23 +123,28 @@ const MainContent = () => (
         leaders. According to science, they earn $29k a year.{" "}
       </p>
     </div>
+
     <div className="familiar-container">
       <h1 className="familiar-text"> Does this sound familiar... </h1>
       <ul className="emojis-familiar-card">
-        <li className="list-card">
-          <p> Hello </p>
-          <h1 className="familiar-title">You argue with a colleague </h1>
-          <p className="familiar-description">
-            {" "}
-            You get angry and defensive, instead of staying open and working
-            towards common ground.{" "}
-          </p>
-        </li>
+        {emotionsCardsList.map((emotion) => (
+          <EmotionCard
+            key={emotion.id}
+            emotionDetails={emotion}
+            isHighlighted={emotion.id === "DOUBT"}
+          />
+        ))}
       </ul>
     </div>
+
     <div className="meet-ahead-container">
       <div className="meet-familiar-in-container">
         <div className="meet-description-container">
+          <img
+            src="https://self-awareness.ahead-app.com/static/media/home_owel.e23a16a0.svg"
+            className="meet-ahead-image"
+            alt="meet ahead"
+          />
           <p className="meet-title">Built out of frustration </p>
           <h1 className="meet-description"> Meet the ahead app </h1>
         </div>
@@ -92,7 +164,17 @@ const MainContent = () => (
       </p>
       <h1 className="self-improvement-heading"> Self-improvement. Ugh. </h1>
       <div>
-        <Chrono mode="VERTICAL" items={items} />
+        <div className="self-improvement-timeline">
+          {selfImprovementsList.map((item) => (
+            <div className="timeline-container" key={item.id}>
+              <div className="time-line-dot"></div>
+              <div className="timeline-details">
+                <h3 className="timeline-title">{item.title}</h3>
+                <p className="timeline-description">{item.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
 
@@ -131,12 +213,32 @@ const MainContent = () => (
             not!{" "}
           </p>
         </div>
-        <Chrono mode="HORIZONTAL" color="red">
-          <h1> You </h1>
-          <p> anonymous 1 </p>
-          <p> anonymous 2 </p>
-          <p> anonymous 3 </p>
-        </Chrono>
+        <div className="rating-skills-white-card">
+          <div className="rating-skills-timeline-containers">
+            <div className="rating-time-line-dot you-dot"></div>
+            <div className="rating-skills-timeline-items you-box">
+              <p>You</p>
+            </div>
+          </div>
+          <div className="rating-skills-timeline-containers">
+            <div className="rating-time-line-dot one-dot"></div>
+            <div className="rating-skills-timeline-items anonymous-bottom anonymous1">
+              <p>Anonymous 1</p>
+            </div>
+          </div>
+          <div className="rating-skills-timeline-containers">
+            <div className="rating-time-line-dot two-dot"></div>
+            <div className="rating-skills-timeline-items anonymous2">
+              <p>Anonymous 2</p>
+            </div>
+          </div>
+          <div className="rating-skills-timeline-container-last">
+            <div className="rating-time-line-dot three-dot"></div>
+            <div className="rating-skills-timeline-items anonymous-bottom anonymous3">
+              <p>Anonymous 3</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -161,6 +263,11 @@ const MainContent = () => (
           <h1 className="work-with-us-title"> Work with us </h1>
           <div className="about-product-description">
             <div className="about-container">
+              <img
+                src="https://self-awareness.ahead-app.com/static/media/home_owel.e23a16a0.svg"
+                className="meet-ahead-image"
+                alt="meet ahead"
+              />
               <h1 className="about-title"> About </h1>
               <p className="about-content">
                 {" "}

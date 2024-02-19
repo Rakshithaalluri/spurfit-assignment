@@ -1,5 +1,4 @@
 .main-container {
-  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -17,6 +16,12 @@
   margin-bottom: 90px;
 }
 
+@media (max-width: 576px) {
+  .ahead-app-container {
+    width: 90%;
+    max-width: 100vw;
+  }
+}
 .master-heading-container {
   width: 95%;
   /* border: 1px red solid; */
@@ -57,9 +62,7 @@
   font-size: 10px;
   margin-bottom: 70px;
 }
-.apple-icon {
-  color: #ffffff;
-}
+
 .eq-beats-iq-container {
   display: flex;
   justify-content: space-between;
@@ -67,6 +70,7 @@
   /* border: 1px red solid;*/
   margin-bottom: 70px;
 }
+
 .eq-iq-heading {
   color: #0f0f11;
   font-size: 30px;
@@ -96,7 +100,9 @@
 .emojis-familiar-card {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   list-style-type: none;
+  padding: 0px;
 }
 .list-card {
   background-color: #ccf2ff;
@@ -174,7 +180,7 @@
 }
 
 .Ever-wondered-container {
-  background-color: #e8f6fd;
+  background-color: #edf9fe;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -345,6 +351,21 @@
   width: 30%;
   overflow-x: auto;
 }
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 2px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color of the track */
+}
+
+/* Set color for the thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #995cf3;
+  border-radius: 2px; /* Color of the scrollbar handle */
+}
+
 .ahead-card-containers {
   background-color: #ffffff;
   border-radius: 10px;
@@ -365,7 +386,6 @@
 
 .open-vacancies-container {
   width: 90%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -406,6 +426,192 @@
   font-weight: 500;
 }
 
+.chrono-item {
+  background-color: transparent;
+  border: none;
+}
+
 .hr-line {
-  border: 1px red solid;
+  border: 1px #e6e3f5 solid;
+  width: 80%;
+}
+
+.self-improvement-timeline {
+  width: 80%;
+  padding: 10px;
+}
+
+.timeline-container {
+  position: relative;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.time-line-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 42px;
+  background-color: #9182f7;
+}
+
+.timeline-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.timeline-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #000000;
+}
+
+.timeline-details {
+  position: relative;
+  left: 30px;
+}
+
+.timeline-container::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  top: 45px;
+  left: 26px;
+  height: 100%;
+  background-color: #9182f7;
+}
+.meet-ahead-image {
+  width: 100px;
+  height: 100px;
+}
+
+.app-and-rating {
+  display: flex;
+  align-items: center;
+}
+
+.app-store-image {
+  width: 150px;
+  margin-top: -20px;
+  margin-right: 30px;
+}
+
+.five-star-image {
+  width: 150px;
+}
+
+.rating {
+  margin-top: 0px;
+  font-size: 15px;
+}
+
+.rating-skills-container {
+  background-color: #edf9fe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  border-radius: 30px;
+  padding: 50px;
+  height: 100vh;
+}
+
+.rating-skills-white-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 200px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.anonymonos-timeline {
+  display: flex;
+}
+
+.rating-skills-timeline-containers {
+  padding: 30px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.rating-skills-timeline-container-last {
+  padding: 30px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.rating-skills-timeline-items {
+  background-color: red;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #ffffff;
+  position: relative;
+}
+
+.rating-time-line-dot {
+  position: absolute;
+  top: 63px;
+  z-index: 10;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.rating-skills-timeline-items p {
+  margin: 0px;
+  font-size: 16px;
+}
+
+.you-box {
+  top: -20px;
+  left: -70%;
+  background-color: #661ff2;
+}
+
+.you-dot {
+  background-color: #661ff2;
+}
+
+.anonymous2 {
+  top: -20px;
+  background-color: #fc9c20d8;
+}
+
+.two-dot {
+  background-color: #fc9c20d8;
+}
+
+.anonymous-bottom {
+  top: 60px;
+}
+
+.anonymous1 {
+  background-color: #46c7fa;
+}
+
+.one-dot {
+  background-color: #46c7fa;
+}
+
+.anonymous3 {
+  background-color: #3acf82;
+}
+
+.three-dot {
+  background-color: #3acf82;
+}
+
+.rating-skills-timeline-containers::after {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background-color: rgb(224, 220, 220);
 }
