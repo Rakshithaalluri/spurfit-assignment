@@ -1,30 +1,41 @@
 import "./index.css";
 import EmotionCard from "../EmotionCard";
 
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 const selfImprovementsList = [
   {
-    id: 1,
+    id: "1",
     title: "It's not an easy as 1-2-3",
     description:
       "The journey of change may be long, but our sessions are quick. we get to the point and tell you what you want to know(and nothing else)",
   },
   {
-    id: 2,
-    title: "It's not an easy as 1-2-3",
+    id: "2",
+    title: "Old habits are hard to break.",
     description:
-      "The journey of change may be long, but our sessions are quick. we get to the point and tell you what you want to know(and nothing else)",
+      "And bad behaviour die hard. Fortunately, we give you great, science-backed techniques to use.",
   },
   {
-    id: 3,
-    title: "It's not an easy as 1-2-3",
+    id: "3",
+    title: "You and your motivation don't have a long-term relationship.",
     description:
-      "The journey of change may be long, but our sessions are quick. we get to the point and tell you what you want to know(and nothing else)",
+      "Luckily, we can proactively prepare you for the marathon, not just the race. Effective, memorable exercisesWill help you stick to your goals.",
   },
   {
-    id: 4,
-    title: "It's not an easy as 1-2-3",
+    id: "4",
+    title: "Books just don't offer practical.",
     description:
-      "The journey of change may be long, but our sessions are quick. we get to the point and tell you what you want to know(and nothing else)",
+      "Remember when you learned to ride a bike just by reading? Yeah. we don't either. We help you take concreate steps towards your goals. Learning just a bit, then immediately springing into action.",
+  },
+  {
+    id: "5",
+    title: "Inspiration is great, but then what.",
+    description:
+      "We make sure your energy from all the content you consume does not fizzle out.",
   },
 ];
 
@@ -78,6 +89,8 @@ const emotionsCardsList = [
 
 const MainContent = () => (
   <div className="main-container">
+    {/* ahead-section container */}
+
     <div className="ahead-app-container">
       <div className="master-heading-container">
         <div className="ahead-title-content">
@@ -94,7 +107,7 @@ const MainContent = () => (
             />
             <div className="rating-container">
               <img
-                src="https://t3.ftcdn.net/jpg/06/04/56/52/360_F_604565205_NMEgtTykGn8oEcqS0nHzVwDvvgWQbkhI.jpg"
+                src="https://res.cloudinary.com/dvmkmx7o3/image/upload/v1708139650/five-stars-rating-icon-png_ozae6o.webp"
                 className="five-star-image"
                 alt="five star"
               />
@@ -110,6 +123,8 @@ const MainContent = () => (
       </div>
     </div>
 
+    {/* EQ beats IQ container */}
+
     <div className="eq-beats-iq-container">
       <h1 className="eq-iq-heading"> EQ beats IQ </h1>
       <p className="eq-description">
@@ -124,6 +139,8 @@ const MainContent = () => (
       </p>
     </div>
 
+    {/* Does this sound familiar container */}
+
     <div className="familiar-container">
       <h1 className="familiar-text"> Does this sound familiar... </h1>
       <ul className="emojis-familiar-card">
@@ -136,6 +153,8 @@ const MainContent = () => (
         ))}
       </ul>
     </div>
+
+    {/* Built out of frustration container */}
 
     <div className="meet-ahead-container">
       <div className="meet-familiar-in-container">
@@ -156,6 +175,8 @@ const MainContent = () => (
         </p>
       </div>
     </div>
+
+    {/* Self Improvement container */}
 
     <div className="self-improvement-timeline-container">
       <p className="self-improvement-title">
@@ -178,6 +199,8 @@ const MainContent = () => (
       </div>
     </div>
 
+    {/* Be the best you you with EQ container */}
+
     <div className="eq-beats-iq-container">
       <h1 className="eq-iq-heading"> Be the best you with EQ </h1>
       <p className="eq-description">
@@ -190,6 +213,8 @@ const MainContent = () => (
         parent, friend you can be.
       </p>
     </div>
+
+    {/* Ever Wondered container */}
 
     <div className="Ever-wondered-container">
       <div className="ever-wonder-description">
@@ -242,6 +267,8 @@ const MainContent = () => (
       </div>
     </div>
 
+    {/* We take privacy seriously container */}
+
     <div className="before-start-test-container">
       <div className="test-description-container">
         <p className="privacy-text"> We take privacy seriously </p>
@@ -256,6 +283,8 @@ const MainContent = () => (
         <p className="min-test"> Take only 5 minutes </p>
       </div>
     </div>
+
+    {/* Work with us container */}
 
     <div className="work-with-us-container">
       <div className="work-with-us-description-container">
@@ -337,6 +366,8 @@ const MainContent = () => (
         </div>
       </div>
     </div>
+
+    {/* Open vacancies container */}
 
     <div className="open-vacancies-container">
       <div className="open-vacancies-description">

@@ -1,5 +1,8 @@
 import "./index.css";
 
+// import { IoLocationSharp } from "react-icons/io5";
+// import { IoIosMail } from "react-icons/io";
+
 const Footer = () => (
   <footer className="footer-container">
     <div className="footer-logo-title">
@@ -12,9 +15,11 @@ const Footer = () => (
     </div>
     <div className="location-email-main-container">
       <div className="icon-text-container">
+        {/*  <IoLocationSharp size={25} color="#fff" className="location" /> */}
         <p className="location-email-text">Augustrase 26, 10117 Berlin</p>
       </div>
       <div className="icon-text-container">
+        {/*  <IoIosMail size={25} color="#fff" className="email" /> */}
         <p className="location-email-text">hi@ahead-app.com</p>
       </div>
     </div>
